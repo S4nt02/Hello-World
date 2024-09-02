@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1f2833;
+}
+
+section{
+    background-color: #0b0c10;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0px 5px 30px #000;
+    padding: 20px;
+    justify-content: center;
+}
+
+.login{
+    display: block;
+    color: #66fcf1;
+    text-align: center;
+}
+
+.title{
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.title a{
+    text-decoration: none;
+    color: #66fcf1;
+}
+
+.title img{
+    width: 60px;
+    height: 60px;
+}
+
+.title h3{
+    font-size: 30px;
+}
+
+.form{
+    margin-bottom: 60px;
+}
+
+.form input{
+    margin: 5px;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #c5c6c7;
+    color: #0b0c10;
+    font-weight: 500;
+}
+
+.teste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.form #botão{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form #botão span{
+    font-size: 13px;
+    margin-left: 35px;
+}
+
+.form #botão input{
+    width: 100px;
+    height: 30px;
+}
+
+.cadastro{
+    margin-top: 70px;
+}
+
+.cadastro p{
+    color: #c5c6c7;
+}
+
+.cadastro a{
+    text-decoration: none;
+    color: #66fcf1;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo no fim (lado direito) do header */
+    align-items: center; /* Centraliza verticalmente dentro do header */
+    height: 60px; /* Altura do cabeçalho, ajuste conforme necessário */
+    padding: 15px; /* Espaçamento interno para o conteúdo dentro do header */
+}
+
+#button {
+    margin-left: auto; /* Empurra o botão para a direita */
+}
+
+#toggleCheckbox {
+    display: none; /* Esconde o input checkbox */
+}
+
+header label {
+    display: flex; /* Permite que o label se comporte como um bloco flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-decoration: none;
+    color: #0b0c10;
+    background-color: #66fcf1;
+    padding: 15px; /* Reduzi o padding para ficar mais compacto */
+    border-radius: 10px;
+    cursor: pointer; /* Mostra que é clicável */
+}
+
+header .fa-moon,
+header .fa-sun {
+    font-size: 19px;
+    color: #0b0c10;
+    margin: 0 5px;
+}
+
+.fa-moon,
+.fa-sun {
+    font-size: 19px;
+    color: #0b0c10;
+    margin: 0 5px;
+}
+
+#toggleCheckbox:checked + label .fa-moon {
+    color: #0b0c10; /* Nova cor da lua */
+}
+
+#toggleCheckbox:checked + label .fa-sun {
+    color: #e1dd03; /* Nova cor do sol */
+}
+
+
+
+.dark-mode{
+    background-color: #87a2b5;
+}
+
+.dark-mode section{
+    background-color: #454f55;
+}
+
+.dark-mode .login{
+    color: #b2ffe9;
+}
+
+.dark-mode .title a{
+    color: #b2ffe9;
+}
+
+.dark-mode .form input{
+    background-color: #f7f8f9;
+    color: #454f55;
+}
+
+.dark-mode .cadastro p{
+    color: #f7f8f9;
+}
+
+.dark-mode .cadastro a{
+    color: #b2ffe9;
+}
+
+
+.dark-mode header label{
+    background-color: #b2ffe9;
+    color: #454f55;
+}

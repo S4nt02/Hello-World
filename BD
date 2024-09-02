@@ -1,0 +1,106 @@
+create database cadastro;
+use cadastro;
+
+create table recrutador(
+id_cadastro int primary key auto_increment,
+nome varchar(100) not null,
+nascimento date not null,
+genero varchar(9) not null,
+nome_materno varchar(100) not null,
+cpf numeric(11) not null,
+email varchar(500) UNIQUE not null,
+celular numeric(11) not null,
+telefone numeric(10) not null,
+senha varchar(50) not null,
+confirmar_senha varchar(50) not null,
+cep varchar(8) not null,
+uf varchar (5) not null,
+logradouro varchar(100) not null,
+numero varchar(10) not null,
+complemento varchar(100) not null,
+bairro varchar(50) not null,
+localidade varchar (100) not null
+);
+
+create table desenvolvedor(
+id_desenvolvedor integer primary key auto_increment ,
+nome varchar(100) not null,
+nascimento date not null,
+genero varchar(9) not null,
+nome_materno varchar(100) not null,
+cpf numeric(11) not null,
+email varchar(500) UNIQUE not null,
+celular numeric(11) not null,
+telefone numeric(10) not null,
+senha varchar(50) not null,
+confirmar_senha varchar(50) not null,
+cep varchar(8) not null,
+uf varchar (5) not null,
+logradouro varchar(100) not null,
+numero varchar(10) not null,
+complemento varchar(100) not null,
+bairro varchar(50) not null,
+localidade varchar (100) not null,
+senioridade varchar(20),
+html boolean,
+css boolean,
+javascript boolean,
+c boolean,
+python boolean,
+java boolean,
+php boolean,
+bio varchar(1000) not null,
+linkedin varchar(500) not null,
+github varchar(500) not null
+);
+
+-- Consulta para criar a tabela resultante
+CREATE VIEW usuario AS
+SELECT 
+    id_cadastro AS id,
+    nome,
+    genero,
+    nascimento,
+    email,
+    cpf,
+    telefone,
+    NULL AS senioridade,
+    NULL AS html,
+    NULL AS css,
+    NULL AS javascript,
+    NULL AS c,
+    NULL AS python,
+    NULL AS java,
+    NULL AS php,
+    NULL AS bio,
+    NULL AS linkedin,
+    NULL AS github,
+    'recrutador' AS usuario
+FROM 
+    recrutador
+
+UNION ALL
+
+SELECT 
+    id_desenvolvedor AS id,
+    nome,
+    genero,
+    nascimento,
+    email,
+    cpf,
+    telefone,
+    senioridade,
+    html,
+    css,
+    javascript,
+    c,
+    python,
+    java,
+    php,
+    bio,
+    linkedin,
+    github,
+    'desenvolvedor' AS tipo_usuario
+FROM 
+    desenvolvedor;
+

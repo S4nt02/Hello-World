@@ -1,0 +1,125 @@
+@media screen and (max-width:1250px){
+    .menu{
+        width: 300px;
+    }
+
+    #dados{
+        margin-left: 310px;
+    }
+
+    #nome-completo, #nome-materno, #logadouro{
+        width: 400px;
+    }
+
+    .sexo, .email, .tel-fixo, .confirmar-senha, .uf, .localidade{
+        margin-left: 250px;
+    }
+
+    #cpf, #email, #celular, #tel-fixo, #senha, #confirmar-senha, #cep, #numero, #complemento, #bairro, #localidade, #linkedin, #github{
+        width: 175px;
+    }
+
+    .linguagens svg{
+        width: 40px;
+        height: 40px;
+    }
+
+    .linguagens input[type="checkbox"]{
+        margin: 20px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .front{
+        width: 400px;
+    }
+
+    .github{
+        margin-left: 250px;
+    }
+
+    #bio{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:750px){
+    
+    .menu{
+        height: auto;
+        position: relative;
+    }
+
+    main{
+        display: block;
+        width: auto;
+        overflow: scroll;
+    }
+
+    .menu{
+        border-right: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sub-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .option{
+        display: none;
+        border: 1px solid #c5c6c7;
+        border-radius: 10px;
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    .option svg{
+        width: 20px ;
+        height: 20px;
+    }
+
+    #dados{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:470px){
+    main{
+        width: auto;
+    }
+
+    .content-title{
+        font-size: 20px;
+    }
+    
+    .input-title{
+        font-size: 10px;
+    }
+
+    #nome-completo, #nome-materno, #logadouro{
+        width: 260px;
+    }
+
+    #cpf, #email, #celular, #tel-fixo, #senha, #confirmar-senha, #cep, #numero, #complemento, #bairro, #localidade, #linkedin, #github{
+        width: 250px;
+    }
+    .linguagens svg{
+        width: 40px;
+        height: 40px;
+    }
+    .sexo, .email, .tel-fixo, .confirmar-senha, .uf, .localidade, .complemento, .github{
+        position: static;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #bio{
+        width: 260px;
+    }
+    
+    .front{
+        width: 280px;
+    }
+}

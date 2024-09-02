@@ -1,0 +1,423 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1f2833;
+    display: flexbox;
+}
+
+.span-required{
+    display: none;
+    font-size: 18px;
+    color: red;
+    
+}
+
+#cpf::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+#celular::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+#tel-fixo::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+#texto{
+    margin-right: 1050px;
+}
+
+main{
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    border-radius: 20px;
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    box-shadow: 0px 5px 30px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu{
+    display: block;
+    border-right: 2px solid #c5c6c7;
+    width: 350px;
+}
+
+
+.title{
+    text-align: center;
+    color: #66fcf1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 25px
+
+}
+
+.title a{
+    text-decoration: none;
+    color: #66fcf1;
+}
+
+.title img{
+    width: 60px;
+    height: 60px;
+}
+
+.foto-perfil{
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+}
+
+#perfil-img{
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.foto-perfil input{
+    display: none;
+}
+
+#file-upload{
+    border: 1px solid #c5c6c7;
+    padding: 5px;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #9b9da3a5;
+    color: #c5c6c7;
+}
+
+.sub-menu{
+    margin-top: 50px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-top: 1px solid #c5c6c7;
+}
+
+.option:last-child{
+    border-bottom: 1px solid #c5c6c7;
+}
+.option svg{
+    margin: 5px
+}
+
+.option a{
+    color: #c5c6c7;
+    text-decoration: none;
+}
+
+.login{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.login a {
+    color: #66fcf1;
+    text-decoration: none;
+}
+
+#dados{
+    display: flex;
+
+    overflow-y: scroll;
+    margin: 20px;
+    margin-left: 30px;
+    max-width: 100%;    
+    flex-direction: column;
+}
+
+hr{
+    border: 1px solid #66fcf1;
+    margin-bottom: 15px;
+    width:100%;
+}
+
+#dados::-webkit-scrollbar{
+    display: none;
+}
+
+.content-title{
+    font-size: 30px;
+    color: #66fcf1;
+}
+
+.input-title{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.dados-content input, .endereco input, .curriculo input{
+    /* background-color: #fff; */
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.dados-content input:focus, select:focus, .endereco input:focus, .curriculo input:focus{
+    outline: none;
+}
+
+#nome-completo{
+    width: 600px;
+}
+
+.nascimento{
+    width: 200px;
+}
+#data-nascimento{
+    width: 100px;
+}
+
+.sexo, .email, .tel-fixo, .confirmar-senha, .uf, .localidade{
+    position: static;
+    margin-left: 350px;
+    margin-top: -58px;
+}
+
+.sexo select{
+    width: 100px;
+    height: 37px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#nome-materno{
+    width: 600px
+}
+
+#email{
+    width: 250px;
+}
+
+#uf{
+    width: 50px;
+}
+
+#logadouro{
+    width: 600px;
+}
+
+#numero{
+    width: 130px;
+}
+
+.complemento{
+    position: static;
+    margin-left: 250px;
+    margin-top: -58px;
+}
+
+#complemento{
+    width: 350px;
+}
+
+.curriculo p{
+    font-size: 20px;
+}
+
+.nivel select{
+    width: 100px;
+    height: 37px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#bio{
+    width: 600px;
+    border-radius: 15px;
+    resize: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.github{
+    position: static;
+    margin-left: 350px;
+    margin-top: -58px;
+}
+
+#linkedin, #github{
+    width: 250px;
+}
+
+.botao{
+    display:flex
+}
+
+.botao button{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #66fcf1;
+    color: #0b0c10;
+    border-radius: 15px;
+}
+
+.botao button:not(:first-child){
+    margin-left: 30px;
+}
+
+
+.linguagens svg{
+    width: 60px;
+    height: 60px;
+}
+
+.linguagens input[type="checkbox"]{
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.front{
+    display: flex;
+    justify-content:space-between ;
+    width: 600px;
+}
+
+#modal {
+    display: none; /* Oculta a janela de diálogo */
+    position: fixed; /* Fixa a janela de diálogo na tela */
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    z-index: 1000; /* Garante que o modal esteja em frente ao conteúdo da página */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  
+#modal-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo no fim (lado direito) do header */
+    align-items: center; /* Centraliza verticalmente dentro do header */
+    height: 60px; /* Altura do cabeçalho, ajuste conforme necessário */
+    padding: 15px; /* Espaçamento interno para o conteúdo dentro do header */
+}
+
+#button {
+    margin-left: auto; /* Empurra o botão para a direita */
+}
+
+#toggleCheckbox {
+    display: none; /* Esconde o input checkbox */
+}
+
+header label {
+    display: flex; /* Permite que o label se comporte como um bloco flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-decoration: none;
+    color: #0b0c10;
+    background-color: #66fcf1;
+    padding: 15px; /* Reduzi o padding para ficar mais compacto */
+    border-radius: 10px;
+    cursor: pointer; /* Mostra que é clicável */
+}
+
+header .fa-moon,
+header .fa-sun {
+    font-size: 19px;
+    color: #0b0c10;
+    margin: 0 5px;
+}
+
+.fa-moon,
+.fa-sun {
+    font-size: 19px;
+    color: #0b0c10;
+    margin: 0 5px;
+}
+
+.dark-mode{
+    background-color: #87a2b5;
+
+}
+
+.dark-mode main{
+    background-color: #454f55;
+    color: #f7f8f9;
+}
+.dark-mode .title,
+.dark-mode .title a{
+    color: #b2ffe9;
+}
+
+.dark-mode #file-upload{
+    color: #f7f8f9;
+}
+
+.dark-mode .option a{
+    color: #f7f8f9;
+}
+
+.dark-mode .fa-moon,
+.dark-mode .fa-sun{
+    color: #454f55;
+}
+
+
+.dark-mode .login a{
+    color: #b2ffe9;
+
+}
+
+.dark-mode .content-title{
+    color: #b2ffe9;
+    
+}
+
+.dark-mode .botao button{
+    background-color: #b2ffe9;
+    color: #454f55;
+}
+
+.dark-mode header label{
+    color: #454f55;
+    background-color: #b2ffe9;
+}
+#toggleCheckbox:checked + label .fa-moon {
+    color: #0b0c10; /* Nova cor da lua */
+}
+
+#toggleCheckbox:checked + label .fa-sun {
+    color: #e1dd03; /* Nova cor do sol */
+}

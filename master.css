@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1f2833;
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background-color: #0b0c10;
+    height: 100px;
+    color: #66fcf1;
+    margin-bottom: 20px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+.navbar li{
+    margin: 10px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color:#66fcf1;
+    font-weight: bolder;
+}
+
+#user{
+    display: flex;
+    align-items: center;
+}
+
+#user p{
+    font-size: 20px;
+}
+
+main h2{
+    color:#66fcf1;
+    margin:20px;
+    font-size:40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #66fcf1;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  td a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  td a:hover {
+    color: #66fcf1;
+  }
+  
+  td form {
+    display: inline;
+  }
+  
+  td button[type="submit"] {
+    background-color: #66fcf1;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  td button[type="submit"]:hover {
+    background-color: #66fcf1;
+  }
+
+  #button {
+    margin-left: auto; /* Empurra o botão para a direita */
+}
+
+#toggleCheckbox {
+    display: none; /* Esconde o input checkbox */
+}
+
+header label {
+    display: flex; /* Permite que o label se comporte como um bloco flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-decoration: none;
+    color: #0b0c10;
+    background-color: #66fcf1;
+    padding: 15px; /* Reduzi o padding para ficar mais compacto */
+    border-radius: 10px;
+    cursor: pointer; /* Mostra que é clicável */
+    margin-top: px;
+}
+
+header .fa-moon,
+header .fa-sun {
+    font-size: 19px;
+    color: #0b0c10;
+    margin: 0 5px;
+}
+
+.fa-moon,
+.fa-sun {
+    font-size: 19px;
+    color: #0b0c10;
+    margin: 0 5px;
+}
+
+.dark-mode{
+    background-color: #87a2b5;
+
+}
+
+.dark-mode .navbar{
+    background-color: #454f55;
+    color: #b2ffe9;
+}
+.dark-mode .navbar li a{
+    color: #b2ffe9;
+}
+
+.dark-mode form input::placeholder{
+    color: #454f55;
+}
+
+.dark-mode .fa-moon,
+.dark-mode .fa-sun{
+    color: #454f55;
+}
+
+
+.dark-mode form button{
+    color: #b2ffe9;
+
+}
+
+.dark-mode .card{
+    color: #f7f8f9;
+    
+}
+
+.dark-mode .nome-usuario{
+    color: #b2ffe9;
+}
+
+.dark-mode header label{
+    color: #454f55;
+    background-color: #b2ffe9;
+}
+#toggleCheckbox:checked + label .fa-moon {
+    color: #0b0c10; /* Nova cor da lua */
+}
+
+#toggleCheckbox:checked + label .fa-sun {
+    color: #e1dd03; /* Nova cor do sol */
+}
+
+.dark-mode .acessar-perfil-usuario{
+    background-color: #b2ffe9;
+    color:#454f55;
+}
+
+
